@@ -18,4 +18,15 @@ maskify("Nananananananananananananananana Batman!") == "########################
 def maskify(cc):
     return "#"*(len(cc)-4) + cc[-4:]
 
-print(maskify("237397294jdjdkd"))
+#print(maskify("237397294jdjdkd"))
+
+#return masked string
+def maskify_2(cc):
+    parte_1 = cc[:-4]
+    parte_2 = cc[-4:]
+    for i in parte_1:
+        parte_1 = parte_1.replace(i,"#")
+    return parte_1+parte_2
+
+print(maskify_2("hsdhjsfkjskuf088gsdg"))
+
