@@ -10,11 +10,9 @@ If a value is present in b, all of its occurrences must be removed from the othe
 array_diff([1,2,2,2,3],[2]) == [1,3]
 """
 def array_diff(a, b):
-    con_a = set(a)
-    con_b = set(b)
-    return list(con_a - con_b)
-
-print(array_diff([1,2,2],[1]))
+    return [x for x in a if x in a and not x in b ]
+    
+print(array_diff([1,2,2,2,3],[2]))
 
 
     
