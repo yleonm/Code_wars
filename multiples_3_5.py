@@ -12,7 +12,13 @@ def solution(number):
     if number < 0:
         return 0
     elif number >=0:
-         lista = [x for x in range(0,number+1)]
-    return lista
+         lista = [x for x in range(1,number)]
+         contador = 0
+         for x in lista:
+             if x%5 == 0 and x%3 == 0:
+                 contador += x
+             elif x%5 ==0 or x %3 == 0:
+                 contador+=x
+    return contador
 
-print(solution(35))
+print(solution(10))
