@@ -22,3 +22,15 @@ def solution(number):
     return contador
 
 print(solution(10))
+
+def solution_2(number):
+    return sum(x for x in range(number) if x % 3 == 0 or x % 5 == 0)
+
+print(solution_2(-6))
+
+"""def solution_3(number):
+    threes = range(3, number, 3)
+    fives = range(5, number, 5)
+    return sum(list(set(threes + fives)))
+
+print(solution_3(10))"""
