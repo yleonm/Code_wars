@@ -28,6 +28,15 @@ def solution_2(number):
 
 print(solution_2(-6))
 
+from itertools import chain
+
+def solution_4(number):
+    return sum(set(chain(range(3,number,3), range(5,number,5))))
+
+print(solution_4(10))
+
+
+
 """def solution_3(number):
     threes = range(3, number, 3)
     fives = range(5, number, 5)
